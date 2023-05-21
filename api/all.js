@@ -1,6 +1,5 @@
 import  mongoose  from "mongoose";
 import ShortUrl from "../models/model";
-import util from 'util';
 require('util.promisify').shim();
 require('dotenv').config()
 
@@ -10,7 +9,7 @@ export default async (req, res ) =>
   
   console.log("No data in redis");
     await mongoose.connect(process.env.DB, {
-        dbName: 'lenk-cf',
+        dbName: 'url-shortner',
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,

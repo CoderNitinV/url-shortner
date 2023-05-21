@@ -15,7 +15,7 @@ function makeid(r) {
 }
 export default async (req, res) => {
   await mongoose.connect(process.env.DB, {
-    dbName: "lenk-cf",
+    dbName: "url-shortner",
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

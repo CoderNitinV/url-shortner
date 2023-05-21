@@ -1,4 +1,4 @@
-const cacheName = "lenk";
+const cacheName = "url-shortner"
 const staticAssets =[
     './',
     '/css'

@@ -4,7 +4,7 @@ import ShortUrl from "../models/model";
 function digits_count(n) {var count = 0;if (n >= 1) ++count;while (n / 10 >= 1) {n /= 10;++count;}return count;}
 export default async (req, res) => {
   await mongoose.connect(process.env.DB, {
-    dbName: "lenk-cf",
+    dbName: 'url-shortner',
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

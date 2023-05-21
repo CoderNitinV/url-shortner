@@ -5,7 +5,7 @@ export default async (req, res) => {
   var connect = "offline";
   await mongoose
     .connect(uri, {
-      dbName: "lenk-cf",
+      dbName: "url-shortner",
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
